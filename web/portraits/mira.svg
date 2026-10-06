@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-label="Temporary illustrated portrait of Mira">
+  <rect width="240" height="240" fill="#C8D5C3"/>
+  <circle cx="200" cy="44" r="58" fill="#B7C8B2"/>
+  <path d="M40 240c4-46 38-70 80-70s76 24 80 70z" fill="#5C7862"/>
+  <path d="M96 176l24 22 24-22" fill="none" stroke="#4A6450" stroke-width="5" stroke-linecap="round"/>
+  <rect x="106" y="138" width="28" height="36" rx="12" fill="#B9876A"/>
+  <path d="M68 112c0-44 22-68 52-68s52 24 52 68c0 26-6 46-12 56H80c-6-10-12-30-12-56z" fill="#3B2C28"/>
+  <ellipse cx="120" cy="112" rx="38" ry="44" fill="#C99A7A"/>
+  <path d="M80 104c6-34 26-46 44-46 20 0 34 14 38 40-18-4-36-14-46-28-8 16-20 28-36 34z" fill="#3B2C28"/>
+  <path d="M101 114q7-4 14 0M125 114q7-4 14 0" fill="none" stroke="#2D2220" stroke-width="3.5" stroke-linecap="round"/>
+  <path d="M112 136q8 4 16 0" fill="none" stroke="#7E4E3C" stroke-width="3.5" stroke-linecap="round"/>
+  <ellipse cx="102" cy="128" rx="7" ry="4" fill="#D98F7A" opacity=".45"/>
+  <ellipse cx="138" cy="128" rx="7" ry="4" fill="#D98F7A" opacity=".45"/>
+</svg>

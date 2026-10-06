@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-label="Temporary illustrated portrait of Sunny">
+  <rect width="240" height="240" fill="#F1CF94"/>
+  <circle cx="200" cy="44" r="58" fill="#EBC07A"/>
+  <path d="M40 240c4-46 38-70 80-70s76 24 80 70z" fill="#B4552F"/>
+  <path d="M100 172q20 16 40 0" fill="none" stroke="#93421F" stroke-width="5" stroke-linecap="round"/>
+  <rect x="106" y="138" width="28" height="36" rx="12" fill="#7E5034"/>
+  <g fill="#24170F">
+    <circle cx="86" cy="80" r="20"/><circle cx="108" cy="64" r="22"/><circle cx="134" cy="64" r="22"/>
+    <circle cx="156" cy="82" r="20"/><circle cx="80" cy="104" r="16"/><circle cx="162" cy="104" r="16"/>
+  </g>
+  <ellipse cx="120" cy="114" rx="38" ry="44" fill="#8D5A3B"/>
+  <path d="M86 92c10-16 24-22 34-22s26 6 34 22c-10-4-22-6-34-6s-24 2-34 6z" fill="#24170F"/>
+  <circle cx="106" cy="114" r="4" fill="#1B110B"/><circle cx="134" cy="114" r="4" fill="#1B110B"/>
+  <path d="M108 132q12 12 24 0" fill="none" stroke="#4A2A18" stroke-width="3.5" stroke-linecap="round"/>
+  <ellipse cx="100" cy="128" rx="7" ry="4" fill="#B5674A" opacity=".5"/>
+  <ellipse cx="140" cy="128" rx="7" ry="4" fill="#B5674A" opacity=".5"/>
+</svg>

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-label="Temporary illustrated portrait of Rowan">
+  <rect width="240" height="240" fill="#B9C6D7"/>
+  <circle cx="200" cy="44" r="58" fill="#A8B7CB"/>
+  <path d="M40 240c4-46 38-70 80-70s76 24 80 70z" fill="#33465E"/>
+  <path d="M104 172l16 30 16-30z" fill="#E9E4DA"/>
+  <path d="M100 172l20 30-28-8zM140 172l-20 30 28-8z" fill="#283A50"/>
+  <rect x="106" y="138" width="28" height="36" rx="12" fill="#D6A985"/>
+  <ellipse cx="120" cy="112" rx="37" ry="44" fill="#E0B694"/>
+  <path d="M82 104c0-30 16-46 38-46 24 0 40 14 38 44-6-14-16-22-30-24-14 6-30 10-46 26z" fill="#6A4733"/>
+  <path d="M101 110h14M125 110h14" stroke="#4A3324" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="108" cy="118" r="3.5" fill="#2A1E16"/><circle cx="132" cy="118" r="3.5" fill="#2A1E16"/>
+  <path d="M112 136q8 3 16 0" fill="none" stroke="#8A5A40" stroke-width="3.5" stroke-linecap="round"/>
+</svg>

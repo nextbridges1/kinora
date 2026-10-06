@@ -1,0 +1,300 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<!--HEAD-->
+<title>Kinora</title>
+<meta name="description" content="Choose the conversation you need. AI companions you can talk to by text or voice.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..700;1,6..96,400..700&family=Manrope:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="styles.css">
+<!--/HEAD-->
+</head>
+<body>
+<!--BODY-->
+<a class="skip" href="#main">Skip to content</a>
+<div class="grain" aria-hidden="true"></div>
+
+<header class="topbar" id="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="#home"><span class="brand-mark" aria-hidden="true"></span>Kinora</a>
+    <nav class="topnav" aria-label="Sections">
+      <button type="button" class="navlink" data-scroll="companions">Companions</button>
+      <button type="button" class="navlink" data-scroll="how">How voice works</button>
+    </nav>
+    <span id="mode-badge" class="mode-badge" hidden></span>
+    <button id="open-settings" class="btn ghost" type="button">
+      <svg aria-hidden="true" viewBox="0 0 24 24" class="icon"><path d="M4 7h10M18 7h2M4 17h4M12 17h8"/><circle cx="16" cy="7" r="2"/><circle cx="10" cy="17" r="2"/></svg>
+      <span class="hide-sm">Settings</span>
+    </button>
+  </div>
+</header>
+
+<div id="banner" class="banner" role="status" hidden></div>
+
+<main id="main" tabindex="-1">
+
+  <!-- HOME -->
+  <section id="view-home" class="view home" aria-labelledby="home-title">
+
+    <div class="hero">
+      <div class="aurora" aria-hidden="true"><span></span><span></span><span></span></div>
+      <div class="hero-copy">
+        <p class="eyebrow rise" style="--d:0">AI companions for real conversations</p>
+        <h1 id="home-title" class="hero-title">
+          <span class="rise" style="--d:1">Choose the</span>
+          <span class="rise" style="--d:2"><em>conversation</em></span>
+          <span class="rise" style="--d:3">you need.</span>
+        </h1>
+        <p class="lede rise" style="--d:4">Vent about a rough day, share something good, or think a decision through out loud. Talk by text or voice with a companion who's built for that kind of conversation.</p>
+        <div class="hero-cta rise" style="--d:5">
+          <button type="button" class="btn primary large" data-scroll="intent">Find the right conversation</button>
+          <button type="button" class="btn ghost large" data-scroll="companions">Meet the companions</button>
+        </div>
+      </div>
+      <div class="hero-faces rise" style="--d:3" id="hero-faces" aria-hidden="true"></div>
+    </div>
+
+    <div class="ticker" aria-hidden="true"><div class="ticker-track" id="ticker"></div></div>
+
+    <div id="continue-area" class="continue" hidden>
+      <img id="continue-portrait" class="portrait xs" alt="">
+      <p id="continue-text" class="continue-text"></p>
+      <div class="continue-actions">
+        <button id="continue-btn" class="btn primary" type="button">Continue</button>
+        <button id="continue-end" class="btn ghost" type="button">End it</button>
+      </div>
+    </div>
+
+    <section id="intent" class="intent" aria-labelledby="intent-title">
+      <div class="section-head reveal">
+        <p class="eyebrow">Start where you are</p>
+        <h2 id="intent-title">What kind of conversation would help <em>right now?</em></h2>
+        <p class="section-sub">No need to label how you feel. Pick the situation that's closest and start talking.</p>
+      </div>
+      <ul id="intent-list" class="intent-grid"></ul>
+    </section>
+
+    <section id="companions" class="showcase-wrap" aria-labelledby="companions-title">
+      <div class="section-head reveal">
+        <p class="eyebrow">The companions</p>
+        <h2 id="companions-title">Three distinct ways <em>to talk it through.</em></h2>
+        <p class="section-sub">Each has its own personality, voice and rules for how they listen. All three are AI, and say so.</p>
+      </div>
+      <ul id="companion-list" class="showcase" aria-label="Companions"></ul>
+    </section>
+
+    <section id="how" class="how" aria-labelledby="how-title">
+      <div class="section-head reveal">
+        <p class="eyebrow">How voice works</p>
+        <h2 id="how-title">Record, review, <em>hear the reply.</em></h2>
+        <p class="section-sub">Voice works as recorded messages, not a live call. You stay in control of every step.</p>
+      </div>
+      <ol class="steps">
+        <li class="step reveal"><span class="step-n">1</span><h3>Record</h3><p>Press Record and say it however it comes out. Up to a minute at a time.</p></li>
+        <li class="step reveal"><span class="step-n">2</span><h3>Review</h3><p>See what Kinora heard and fix anything before it's sent.</p></li>
+        <li class="step reveal"><span class="step-n">3</span><h3>Reply</h3><p>Your companion answers in text first, so you can always read it.</p></li>
+        <li class="step reveal"><span class="step-n">4</span><h3>Listen</h3><p>The reply is read aloud in their AI voice. Stop, replay or mute any time.</p></li>
+      </ol>
+    </section>
+
+    <section class="promises" aria-labelledby="promises-title">
+      <h2 id="promises-title" class="sr-only">What to expect</h2>
+      <div class="promise reveal"><h3>Clearly AI</h3><p>Every companion and voice is AI-generated, and labelled that way everywhere.</p></div>
+      <div class="promise reveal"><h3>Nothing kept</h3><p>Conversations aren't saved. End a session and the transcript is gone.</p></div>
+      <div class="promise reveal"><h3>Yours to end</h3><p>No streaks or nudges to keep talking. A two-minute chat is a good chat.</p></div>
+    </section>
+  </section>
+
+  <!-- COMPANION DETAILS -->
+  <section id="view-details" class="view details" aria-labelledby="details-name" hidden>
+    <button class="back" type="button" data-go="home">
+      <svg aria-hidden="true" viewBox="0 0 24 24" class="icon"><path d="M15 5l-7 7 7 7"/></svg>All companions
+    </button>
+    <div class="details-grid">
+      <figure class="details-figure">
+        <div class="arch lg"><img id="details-portrait" alt=""></div>
+        <figcaption>Temporary portrait</figcaption>
+      </figure>
+      <div class="details-body" id="details-body">
+        <p class="ai-label">AI companion</p>
+        <h1 id="details-name"></h1>
+        <p id="details-role" class="kicker"></p>
+        <p id="details-purpose" class="details-purpose"></p>
+
+        <h2>How they talk with you</h2>
+        <ul id="details-style" class="traits"></ul>
+
+        <h2>How a conversation starts</h2>
+        <blockquote id="details-opening" class="quote"></blockquote>
+
+        <h2>Voice</h2>
+        <div class="voice-row">
+          <button id="details-preview" class="btn ghost" type="button">
+            <svg aria-hidden="true" viewBox="0 0 24 24" class="icon"><path d="M4 9v6h4l5 4V5L8 9z"/><path d="M16.5 8.5a5 5 0 010 7"/></svg>
+            <span>Play voice preview</span>
+          </button>
+          <p id="details-voice" class="muted small"></p>
+        </div>
+        <p id="details-preview-msg" class="muted small" role="status"></p>
+
+        <h2>What to expect</h2>
+        <p id="details-scope" class="muted"></p>
+
+        <button id="details-start" class="btn primary large" type="button">Start conversation</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONVERSATION ROOM -->
+  <section id="view-room" class="view room" aria-labelledby="room-name" hidden>
+    <aside class="room-side">
+      <div class="room-who">
+        <div class="arch md"><img id="room-portrait" alt=""></div>
+        <div class="room-id">
+          <p class="ai-label">AI companion · AI voice</p>
+          <h1 id="room-name"></h1>
+          <p id="room-role" class="kicker"></p>
+        </div>
+      </div>
+
+      <div class="status" id="status" data-state="idle">
+        <span class="status-dot" aria-hidden="true"></span>
+        <span id="status-text" role="status">Ready</span>
+      </div>
+
+      <div class="audio-controls" role="group" aria-label="Spoken replies">
+        <button id="btn-stop" class="btn ghost" type="button" disabled>
+          <svg aria-hidden="true" viewBox="0 0 24 24" class="icon"><rect x="6" y="6" width="12" height="12" rx="1.5"/></svg>Stop audio
+        </button>
+        <button id="btn-replay" class="btn ghost" type="button" disabled>
+          <svg aria-hidden="true" viewBox="0 0 24 24" class="icon"><path d="M4 12a8 8 0 108-8H8"/><path d="M10 1L7 4l3 3"/></svg>Replay
+        </button>
+        <button id="btn-mute" class="btn ghost" type="button" aria-pressed="false">
+          <svg aria-hidden="true" viewBox="0 0 24 24" class="icon"><path d="M4 9v6h4l5 4V5L8 9z"/><path id="mute-wave" d="M16.5 8.5a5 5 0 010 7"/></svg><span id="mute-label">Mute voice</span>
+        </button>
+      </div>
+
+      <div class="room-nav">
+        <button id="btn-home" class="btn text" type="button">
+          <svg aria-hidden="true" viewBox="0 0 24 24" class="icon"><path d="M15 5l-7 7 7 7"/></svg>Companions
+        </button>
+        <button id="btn-end" class="btn text danger" type="button">End session</button>
+      </div>
+      <div id="end-confirm" class="end-confirm" hidden>
+        <p>End this conversation? The transcript will be cleared. Nothing has been saved.</p>
+        <div class="row">
+          <button id="end-yes" class="btn danger-solid" type="button">End and clear</button>
+          <button id="end-no" class="btn ghost" type="button">Keep talking</button>
+        </div>
+      </div>
+    </aside>
+
+    <div class="room-main">
+      <ol id="transcript" class="transcript" role="log" aria-label="Conversation transcript" tabindex="0"></ol>
+
+      <div id="ended" class="ended" hidden>
+        <h2>Conversation ended</h2>
+        <p>The transcript has been cleared. Kinora didn't save this conversation.</p>
+        <div class="row">
+          <button id="ended-new" class="btn primary" type="button">Start a new conversation</button>
+          <button class="btn ghost" type="button" data-go="home">Back to companions</button>
+        </div>
+      </div>
+
+      <form id="composer" class="composer" novalidate>
+        <p id="composer-hint" class="hint" hidden></p>
+        <p id="composer-error" class="inline-error" role="alert" hidden></p>
+        <label for="message" class="sr-only" id="message-label">Message</label>
+        <textarea id="message" rows="2" placeholder="Type a message, or record one"></textarea>
+        <div class="composer-row">
+          <button id="btn-mic" class="mic" type="button" aria-pressed="false">
+            <svg aria-hidden="true" viewBox="0 0 24 24" class="icon mic-icon"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5 11a7 7 0 0014 0M12 18v3"/></svg>
+            <span id="mic-label">Record</span>
+          </button>
+          <div id="rec-meter" class="rec-meter" hidden aria-hidden="true"><span id="rec-level"></span></div>
+          <span id="rec-timer" class="rec-timer" hidden></span>
+          <span id="char-count" class="char-count" aria-live="off"></span>
+          <button id="btn-send" class="btn primary send" type="submit">
+            Send
+            <svg aria-hidden="true" viewBox="0 0 24 24" class="icon"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </button>
+        </div>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="foot-inner">
+    <a class="brand small-brand" href="#home"><span class="brand-mark" aria-hidden="true"></span>Kinora</a>
+    <p>Kinora companions are AI. They aren't therapists, doctors or emergency services. If you might be in danger, contact your local emergency number or someone you trust.</p>
+  </div>
+</footer>
+
+<dialog id="access" class="settings" aria-labelledby="access-title">
+  <form id="access-form" class="settings-inner" novalidate>
+    <p class="eyebrow">Private test</p>
+    <h2 id="access-title">Enter your access code</h2>
+    <p class="muted small">Kinora is in a private test. Use the code from the person who shared this link with you.</p>
+    <label for="access-code" class="sr-only">Access code</label>
+    <input id="access-code" class="access-input" type="password" autocomplete="off" required>
+    <p id="access-error" class="inline-error" role="alert" hidden></p>
+    <button class="btn primary large" type="submit">Continue</button>
+  </form>
+</dialog>
+
+<dialog id="settings" class="settings" aria-labelledby="settings-title">
+  <form method="dialog" class="settings-inner">
+    <div class="settings-head">
+      <h2 id="settings-title">Settings</h2>
+      <button class="btn ghost" value="close" type="submit">Done</button>
+    </div>
+
+    <fieldset>
+      <legend>Read replies aloud</legend>
+      <label><input type="radio" name="readAloud" id="ra-voice" value="voice"> When I send a voice message</label>
+      <label><input type="radio" name="readAloud" id="ra-always" value="always"> For every reply</label>
+      <label><input type="radio" name="readAloud" id="ra-never" value="never"> Never (text only)</label>
+    </fieldset>
+
+    <fieldset>
+      <legend>Reply length</legend>
+      <label><input type="radio" name="replyLength" id="rl-short" value="short"> Shorter</label>
+      <label><input type="radio" name="replyLength" id="rl-full" value="full"> Fuller</label>
+    </fieldset>
+
+    <fieldset>
+      <legend>Voice messages</legend>
+      <label><input type="checkbox" id="review-transcript"> Let me check the transcription before it's sent</label>
+    </fieldset>
+
+    <fieldset>
+      <legend>Accessibility</legend>
+      <label><input type="checkbox" id="large-text"> Larger text</label>
+      <label><input type="checkbox" id="reduce-motion"> Reduce motion (also follows your device setting)</label>
+    </fieldset>
+
+    <section class="settings-block">
+      <h3>Today's allowance</h3>
+      <dl id="usage-list" class="usage"></dl>
+      <p class="muted small">Resets at midnight UTC.</p>
+    </section>
+
+    <section class="settings-block">
+      <h3>History and memory</h3>
+      <p class="small">This prototype doesn't save conversations or remember anything between sessions. A conversation exists only in the server's memory until you end it, leave it idle for an hour, or the server restarts.</p>
+    </section>
+
+    <section class="settings-block">
+      <h3>Your data</h3>
+      <p class="small" id="data-note">There are no accounts yet, so there's no account to delete. Messages and voice recordings are sent to OpenAI to generate replies. Kinora doesn't keep recordings, and asks OpenAI not to store conversations for later retrieval.</p>
+    </section>
+  </form>
+</dialog>
+<!--/BODY-->
+<script src="app.js"></script>
+</body>
+</html>
